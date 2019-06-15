@@ -21,10 +21,13 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연](https://github.com
 - [ ]  Navigation Controller, Tabbar Controller, View Controller
 - [ ]  UIStackView
 - [ ]  UIToolbar
+- [ ]  UIPicker + ActionSheet + UIGestur
+- [ ]  UICollectionView
+- [ ]  UISplitView
 - [ ]  UIWebView
 - [ ]  UserDefault
 - [ ]  Cocoapod, Network
-- [ ]  Final Project
+- [ ]  **Final Project🥳**
 - [ ]  ARKit - bonus!
 
 ## RxSwift Study
