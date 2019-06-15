@@ -1,4 +1,6 @@
-# SWM10th-iOS-Course
+# SWM10th-iOS-Course Ver1.0
+소프트웨어 마에스트로 10기 동기들과 함께하는 iOS / Swift 스터디입니다 :)   
+**3개월** 코스로, 다같이 iOS 세계에 빠져봅시당😘
 
 ## Collaborator
 
@@ -34,12 +36,41 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연](https://github.com
 
 Swift를 좀 더 멋지게 사용하기 위한 RxSwift😎
 
-**iOS Study for beginner** 을 듣는 여러분도 참가할 수 있습니다. 다만 Swift 문법을 모두 안다는 가정 하에 진행됩니다. 
+**iOS Study for beginner** 을 듣는 여러분도 참가할 수 있습니다. 다만 Swift 문법을 모두 안다는 가정하에 진행됩니다. 
 
-[udemy 강의]([https://www.udemy.com/mastering-rxswift-in-ios/](https://www.udemy.com/mastering-rxswift-in-ios/))를 참고하여 RxSwift를 공부합니다.
+[udemy 강의](https://www.udemy.com/mastering-rxswift-in-ios/)를 참고하여 RxSwift를 공부합니다.
 
-매주 정해진 챕터의 강의를 듣고 실습 프로젝트를 스터디 시간에 구현하는 것을 목표로 합니다. 실습 플래닝은 곧 업데이트 될 예정입니다 :)
+매주 해당 주차에 해당하는 강의를 학습한 후 **한글로** 번역(영어 강의로 학습합니다), 정리해옵니다. 스터디 시간에는 정리한 내용을 발표하는 시간을 가질 예정입니다.
+실습이 있는 주에는 실습 프로젝트를 직접 구현을 다 해옵니다. 스터디 시간에는 해당 프로젝트에서 뷰를 제외한 Rx에 해당하는 코드를 다시 짜보는 시간을 가집니다 + Rx를 활용한 새로운 기능을 추가합니다.
+
+### Course
+- [ ]  Observables 
+- [ ]  Subjects
+- [ ]  Implementing Photo Filter App → Rx코드 직접 구현
+- [ ]  Filtering Operators
+- [ ]  Todo List App → Rx코드 직접 구현
+- [ ]  Transforming Operators 
+- [ ]  Building News App → Rx코드 직접 구현
+- [ ]  Combining Operators
+- [ ]  Beginning RxCocoa
+- [ ]  Error Handling
+- [ ]  MVVM with RxSwift
+- [ ]  **Final Project🥳**
+
 
 ## 명예의 전당!
 
 끝까지 스터디를 따라온 여러분은 명예의 전당에 이름을 올리게 됩니다!
+
+## Study ver2.0
+
+명예의 전당에 오른 여러분과 함께 Study ver2.0도 생각하고 있습니다.      
+       
+*Example*
+- Functional Programming with Swift
+- SwiftUI
+- Swift Design pattern
+- OSX Programming
+- Apple Watch App Programming
+- ARKit
+- Machine learning with Swift(CoreML)
