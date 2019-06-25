@@ -19,7 +19,7 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연](https://github.com
 공부를 어떻게 해야할 지 모르겠다구요? 걱정마세요 저희가 매주 적절한 가이드를 제시해드립니다ㅎㅎ       
 
 ### Recommended Lecture & Book
-**Lecture**  
+**Online Lecture**  
 - [야곰의 스위프트 기본 문법 강좌](https://www.inflearn.com/course/%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95#description)
 - [Swift 프로그래밍 입문](https://www.edwith.org/boostcamp_ios)
 - [스탠포드-Swift를 활용한 iOS11 앱 개발](https://www.edwith.org/swiftapp)
@@ -29,7 +29,7 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연](https://github.com
 
 **Book**  
 - 아론 힐리가스의 iOS 프로그래밍
-- 꼼꼼한 재은씨의 스위프트 문법편, 기본편, 실전편
+- 꼼꼼한 재은씨의 스위프트 문법편, 기본편, 실전
 
 ### Before beginning
 스터디 시작전 여러분들에게 작은 과제를 하나 드립니다 ㅎㅎㅎ    
