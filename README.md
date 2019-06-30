@@ -46,7 +46,7 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연][2]님과 함께 �
 - 클로져
 
 ### Course
-- [UILabel, UITextView, UITextField, UIButton + Auto layout][9]
+- [ ] [UILabel, UITextView, UITextField, UIButton + Auto layout][9]
 - [ ]  UITableView
 - [ ]  Navigation Controller, Tabbar Controller, View Controller
 - [ ]  UIStackView
