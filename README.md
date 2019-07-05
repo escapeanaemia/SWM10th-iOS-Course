@@ -46,18 +46,18 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연][2]님과 함께 �
 - 클로져
 
 ### Course
-- [ ] [UILabel, UITextView, UITextField, UIButton + Auto layout][9]
-- [ ]  UITableView
-- [ ]  Navigation Controller, Tabbar Controller, View Controller
-- [ ]  UIStackView
-- [ ]  UIToolbar
-- [ ]  UIPicker + ActionSheet + UIGesture
-- [ ]  UICollectionView
-- [ ]  UISplitView
-- [ ]  WebKit
-- [ ]  UserDefault
-- [ ]  Network
-- [ ]  Cocoapod
+- [ ] [UILabel, UITextView, UITextField, UIButton + Auto layout][10]
+- [ ]  [UITableView][11]
+- [ ]  [Navigation Controller, Tabbar Controller, View Controller][12]
+- [ ]  [UIStackView][13]
+- [ ]  [UIToolbar][14]
+- [ ]  [UIPicker + ActionSheet + UIGesture][15]
+- [ ]  [UICollectionView][16]
+- [ ]  [UISplitView][17]
+- [ ]  [WebKit][18]
+- [ ]  [UserDefault][19]
+- [ ]  [Network][20]
+- [ ]  [Cocoapod][21]
 - [ ]  **Final Project🥳**
 - [ ]  ARKit - bonus!
 
@@ -67,7 +67,7 @@ Swift를 좀 더 멋지게 사용하기 위한 RxSwift😎
 
 **iOS Study for beginner** 을 듣는 여러분도 참가할 수 있습니다. 다만 Swift 문법을 모두 안다는 가정하에 진행됩니다.
 
-[udemy 강의][10]를 참고하여 RxSwift를 공부합니다.
+[udemy 강의][9]를 참고하여 RxSwift를 공부합니다.
 
 매주 해당 주차에 해당하는 강의를 학습한 후 **한글로** 번역(영어 강의로 학습합니다), 정리해옵니다.  
 스터디 시간에는 정리한 내용을 발표하는 시간을 가질 예정입니다.
@@ -114,5 +114,16 @@ Swift를 좀 더 멋지게 사용하기 위한 RxSwift😎
 [6]:	https://www.youtube.com/watch?v=71pyOB4TPRE&list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq
 [7]:	https://www.youtube.com/watch?v=ilQ-tq772VI&list=PLPA-ayBrweUz32NSgNZdl0_QISw-f12Ai
 [8]:	https://jusung.gitbook.io/the-swift-language-guide/
-[9]:	/Basic-week1/week1.md
-[10]:	https://www.udemy.com/mastering-rxswift-in-ios/
+[9]:	https://www.udemy.com/mastering-rxswift-in-ios/
+[10]:	/Basic-week1/week1.md
+[11]:	/Basic-week2/week2.md
+[12]:	/Basic-week1/week1.md
+[13]:	/Basic-week1/week1.md
+[14]:	/Basic-week1/week1.md
+[15]:	/Basic-week1/week1.md
+[16]:	/Basic-week1/week1.md
+[17]:	/Basic-week1/week1.md
+[18]:	/Basic-week1/week1.md
+[19]:	/Basic-week1/week1.md
+[20]:	/Basic-week1/week1.md
+[21]:	/Basic-week1/week1.md
