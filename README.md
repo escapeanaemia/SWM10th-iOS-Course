@@ -46,7 +46,7 @@ iOS를 처음 개발해보는 여러분들을 위해 [수연][2]님과 함께 �
 - 클로져
 
 ### Course
-- [ ] [UILabel, UITextView, UITextField, UIButton + Auto layout][10]
+- [ x ] [UILabel, UITextView, UITextField, UIButton + Auto layout][10]
 - [ ]  [UITableView][11]
 - [ ]  [Navigation Controller, Tabbar Controller, View Controller][12]
 - [ ]  [UIStackView][13]
@@ -117,13 +117,13 @@ Swift를 좀 더 멋지게 사용하기 위한 RxSwift😎
 [9]:	https://www.udemy.com/mastering-rxswift-in-ios/
 [10]:	/Basic-week1/week1.md
 [11]:	/Basic-week2/week2.md
-[12]:	/Basic-week1/week1.md
-[13]:	/Basic-week1/week1.md
-[14]:	/Basic-week1/week1.md
-[15]:	/Basic-week1/week1.md
-[16]:	/Basic-week1/week1.md
-[17]:	/Basic-week1/week1.md
-[18]:	/Basic-week1/week1.md
-[19]:	/Basic-week1/week1.md
-[20]:	/Basic-week1/week1.md
-[21]:	/Basic-week1/week1.md
+[12]:	/wait.md
+[13]:	/wait.md
+[14]:	/wait.md
+[15]:	/wait.md
+[16]:	/wait.md
+[17]:	/wait.md
+[18]:	/wait.md
+[19]:	/wait.md
+[20]:	/wait.md
+[21]:	/wait.md
