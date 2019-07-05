@@ -114,5 +114,5 @@ Swift를 좀 더 멋지게 사용하기 위한 RxSwift😎
 [6]:	https://www.youtube.com/watch?v=71pyOB4TPRE&list=PLPA-ayBrweUzGFmkT_W65z64MoGnKRZMq
 [7]:	https://www.youtube.com/watch?v=ilQ-tq772VI&list=PLPA-ayBrweUz32NSgNZdl0_QISw-f12Ai
 [8]:	https://jusung.gitbook.io/the-swift-language-guide/
-[9]:	/Swift-week1/week1.md
+[9]:	/Basic-week1/week1.md
 [10]:	https://www.udemy.com/mastering-rxswift-in-ios/
