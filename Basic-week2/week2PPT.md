@@ -102,12 +102,12 @@ class TableViewController: UITableViewController {
 
 ```
 
-- UIViewController와 다르게 UITableViewController에서 반드시 정의해줘야하는 **numberOfSection** , **numberOfRow** 메소드가 override 되어 있다. 테이블뷰에서 보여줄 섹션과 열의 갯수를 리턴한다. 
-- 그 이외에 주석처리 되어있는 메소드는 용도에 맞게 사용하면 된다. 
+- UIViewController와 다르게 UITableViewController에서 반드시 정의해줘야하는 **numberOfSection** , **numberOfRow** 메소드가 override 되어 있다. 테이블뷰에서 보여줄 섹션과 열의 갯수를 리턴한다.
+- 그 이외에 주석처리 되어있는 메소드는 용도에 맞게 사용하면 된다.
 
 
 # UITableViewCell
-- UITableView에서 보여지는 각 요소들을 cell이라고 부름 
+- UITableView에서 보여지는 각 요소들을 cell이라고 부름
 - 이러한 cell들을 UITableViewCell이라고 부름
 - UIView를 부모 클래스로 두고 있다.
 - *실습 예정*
@@ -137,25 +137,25 @@ class TableViewCell: UITableViewCell {
 - awakeFromNib : UIView에서 초기화시 실행되는 메소드이다. UITableViewCell에서 사용될 경우 해당 셀이 초기화 될 때 이뤄질 내용을 작성해주면 된다. (마치 뷰컨트롤러의 viewDidload와 유사한 기능을 한다.)
 
 # NavigationViewController
-- 앱에서 각 뷰 전환시 stack을 활용하여 뷰간 이동을 용이하게 해주는 컨트롤러 
+- 앱에서 각 뷰 전환시 stack을 활용하여 뷰간 이동을 용이하게 해주는 컨트롤러
 - A뷰 -\> B뷰로 전환시  A뷰에서 B뷰를 push하여 B뷰를 보여준다.
 - B뷰를 종료하면 뷰를 pop하여 사라지게 한다. B뷰가 pop되면 이전에 로드되었던 A뷰가 나타난다.
 - 여러뷰를 동시에 pop할 수 있다.
 - 네비게이션 컨트롤러를 사용하면서 navigation bar을 사용할 수 있다. Navigation bar은 뷰간 네비게이션 이동을 돕는다.
-- 가장 처음 실행되는 뷰를 RootViewController라고 부른다. RootViewController는 pop할 수 없다. 
+- 가장 처음 실행되는 뷰를 RootViewController라고 부른다. RootViewController는 pop할 수 없다.
 
-## Usage 
+## Usage
 ```swift
 class NavigationController: UINavigationController{ }
 ```
 
 # Segue
-- 두 개의 뷰속 전환을 정의하는 요소이다. Segue를 통해서 뷰간 이동을 정의하고 그에 따른 준비를 할 수 있다. 
+- 두 개의 뷰속 전환을 정의하는 요소이다. Segue를 통해서 뷰간 이동을 정의하고 그에 따른 준비를 할 수 있다.
 ## 방법 1  - 스토리보드를 이용한 Segue
 - 스토리보드에서 세그를 추가하고 싶은 두 뷰 사이를 마우스 드래그로 연결하는 방법.
 
 ## 방법 2 - 코드를 이용한 Segue
-- 뷰를 전환하고 싶을 땐 아래의 present 메소드를 실행한다. 
+- 뷰를 전환하고 싶을 땐 아래의 present 메소드를 실행한다.
 ```swift
 let storyboard = UIStoryboard(name: "스토리보드 이름", bundle: nil
 let pushB = storyboard.instantiateViewController (withIdentifier: "viewControllerB") as! ViewControllerB
@@ -163,9 +163,9 @@ present(pushB, animated:true, completion:nil)
 ```
 `animation : 뷰 로드시 애니메이션 효과를 넣을 것인가?`
 `completion : 해당 구문 실행시 함께 실행될 핸들러 클로저를 넣어준다. `
-- 뷰를 종료하고 싶을 땐 dismiss 메소드를 실행한다. 
+- 뷰를 종료하고 싶을 땐 dismiss 메소드를 실행한다.
 ```swift
-dismiss(animated: ture)
+dismiss(animated: true)
 ```
 *주의사항*
 - navigation controller를 이용한 뷰 전환을 원할 경우 present 메소드가 아닌 push메소드를 이용해야 한다.
@@ -193,7 +193,78 @@ if let navigationIsIn = self.navigationController {
 # UIStackView
 - 스택뷰는 주어진 조건에 따라 AutoLayout의 기능을 보다 쉽게 사용할 수 있게 해주는 강력한 친구이다. 조건들은 다음과 같다.
 1. Axis : 스택뷰의 방향 - Vertical, Horizontal
-2. Spacing : 인접뷰 간 공간 
+2. Spacing : 인접뷰 간 공간
 3. Distribution : X축 정렬
 4. Alignment : Y축 정렬
 
+
+# Singleton
+- 하나의 공유된 클래스 인스턴스를 이용하여 shared instance에 접근하는 방식이다.
+- 전역적으로 접근 가능하고 공유된 클래스 인스턴스를 제공하기위해 사용한다.
+- 여러 스레드에서 동시에 접근해도 한번만 lazy하게 초기화되는 경우
+```swift
+class Singleton {
+    static let sharedInstance = Singleton()
+}
+```
+- 초기화 외에 다른 추가 설정을 수행해야하는 경우
+```swift
+class Singleton {
+    static let sharedInstance: Singleton = {
+        let instance = Singleton()
+        // setup code
+        return instance
+    }()
+}
+```
+
+
+# UIImagePickerController
+- 앨범에서 내가 원하는 사진을 선택해서 등록할 때 사용한다. 동작시키는 순서는 다음과 같다.
+1. isSourceTypeAvailable(\_:) class method를 호출하여 선택한 source type에서 이미지를 가져올 수 있음을 명시한다. SourceType에는 .camera, .photoLibrary, .savedPhotosAlbum이 있다.
+2. availableMediaTypes(for:) class method를 호출하여 내가 사용하고 있는 source type에 가능한 media type이 어떤 것인지 확인해준다.
+3. mediaTypes property를 setting해서 이미지, 영상, 혹은 둘 다 가능하게 할지를 image picker controller에 알려준다.
+4. present(\_:animated:completion:) method를 호출하여 화면에 image picker를 띄운다. iPad에서는 source type에 따라 image picker가 띄워지는 방식이 다르고 .photoLibrary, .savedPhotosAlbum을 선택했을 경우엔 popover controller를 이용하여 picker를 띄워야한다.
+5. 이미지를 선택하거나 cancel을 누르면 image picker가 사라진다.
+
+## Declaration
+```swift
+class UIImagePickerController : UINavigationController
+```
+
+
+# NSDataAsset
+- asset catalog에 있는 data set으로 초기화
+- [Data Set Type](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/DataSetType.html#//apple_ref/doc/uid/TP40015170-CH23) in [Asset Catalog Format Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/index.html#//apple_ref/doc/uid/TP40015170)
+
+## Declaration
+```swift
+class NSDataAsset : NSObject
+```
+
+
+# UserDefaults
+- 앱의 어느 곳에서나 데이터를 쉽게 읽고 저장할 수 있다.
+- 사용자 기본 설정과 같은 단일 데이터 값에 적합하다. 대량의 유사한 데이터, 즉 테이블에 대한 레코드, 여러 사용자에 대한 데이터 등을 저장해야하는 경우에는 sqlite 데이터베이스가 더 적합하다.
+- [데이터, 키(key)]으로 데이터를 저장한다. 키 값은 String이다.
+
+## Usage
+```swift
+import UIKit
+
+class ViewController: UITableViewController {
+  @IBOutlet weak var TestSwitch: UISwitch!
+
+  let myUserDefaults = UserDefaults.standard
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+    TestSwitch.isOn = myUserDefaults.bool(forKey: "switchState")
+  }
+
+  @IBAction func switchAction(_ sender: Any) {
+    myUserDefaults.set(TestSwitch.isOn, forKey: "switchState")
+  }
+}
+```
